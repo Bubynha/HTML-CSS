@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{/* Configuração global da CSS*/
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(50deg,#3877FF, #42E0F5);
+            background-attachment: fixed;
+        }
+    </style>
+    <!-- Degradê no fundo da pagina background-image:linear-gradient(to "direção em inglês","cor", "cor")-->
+
+    <!-- Você pode adicionar quantas cores quiser-->
+    <!-- Direções:
+    LEFT - ESQUERDA
+    RIGHT - DIREITA
+    TOP - CIMA
+    BOTTOM - BAIXO -->
+
+    <!--Exemplo:background-image: linear-gradient(to right, white, blue);-->
+     <!-- Aa direções tambem podem ser colocadas informando o ângulo:
+        background-image: linear-gradient(45deg, white, blue)
+        background-image: linear-gradient(-45deg, white, blue)
+    -->
+
+    <!-- Atenção: Caso o degradê não ocupe a tela toda, configure o tamanho da pagina na config. global da CSS-->
+
+    <!-- POde controlar o quanto cada cor vai ocupar da tela
+    Para isso colocar uma porcentagem do lado da cor
+    background-image: linear-gradient(to right, white 30%, blue)-->
+    
+    <!-- Outra forma de gradiente
+    background-image: radial-gradient(circle, white, blue) -->
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

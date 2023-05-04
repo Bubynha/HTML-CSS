@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            /* respomsibilidade */
+            min-width: 300px;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* gerando diminiuição da imagem ao diminuir a area de visão */
+        img {
+            width: 100%;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Reponsividade</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo ipsum neque veritatis suscipit rem ipsa cumque praesentium maiores magnam dolore perferendis modi repellat, placeat consequuntur officiis dolorem incidunt, in ratione! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt perferendis odio, alias suscipit sit, laborum repellendus accusantium error iste architecto incidunt, doloremque veritatis maxime molestias deleniti corrupti soluta id. Minus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis vero tempore nisi quasi maiores ducimus inventore fuga, voluptate, officiis aliquid exercitationem accusamus. Perspiciatis culpa beatae eveniet, natus possimus totam explicabo.
+        </p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae sapiente fugit expedita culpa consectetur harum nesciunt, sit ducimus qui molestias ipsum dolorum! Aliquam ab molestias odio animi eius earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nesciunt ipsam quasi eum provident itaque dolorum non quibusdam odio repellendus impedit nihil, qui modi reiciendis quae optio ex fugiat! Eius.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor.</p>
+    <!-- Use videos nos seguintes formatos:
+    MP4-M4V-WEBM-OGV-->
+    <!--Para vídeos hospedados em seu próprio servidor, priorize em colocar os videos em resoluções menores para não atrapalhar o carregamento do site-->
+    <!--o autoplay funciona desde que o vídeo esteja sem som, e só adicionar a tag muted antes do auto play.-->
+    <video src="midia/meu-video720.webm" width="560" controls></video>
+    <p>Tambem pode adicionar video dessa forma (parecida com a do audio).</p>
+    <video width="560" poster="imagem/limoes-capa.png" controls>
+      <source src="midia/meu-video720.mp4" type="video/mp4">
+      <source src="midia/meu-video720.webm" type="video/webm">
+      <source src="midia/meu-video720.ogv" type="video/ogg">
+      <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p><!-- essa mensagem só irá paracere caso nenhuma das opções colocadas de video for suportada pelo navegador-->
+    </video>
+    <h2>Inserindo vídeos hospedados externamente (de outros sites)</h2>
+    <h2>Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/29315013?h=4a7399cc6d&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /*box level*/
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+
+         /* short hand ( modo simpliicado)
+         Seguir a seguinte ordem mostrada acima
+            border: 10px solid blue;
+         */
+    /* 
+        Sempre declarar a margin e o padding nessa ordem (sentido horário)
+    */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+    /* 
+        Short hand padding ( seguir a ordem acima/sentido horario)
+        padding: 10px 10px 10px 10px;
+        
+        Se as 4 medidas são iguais apenas precisa declarar uma:
+        padding: 10px;
+
+        Se declarar apenas duas medidas vai ser reconhecido como cima/baixo e esquerda/direita:
+        padding: 10px 20px;
+
+    */
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+    /* 
+        para centralizar caixas use margin: auto;
+    */
+    /* 
+        Shorthand da margin funciona igual ao padding: 
+        margin: 20px 20px 40px 20px;
+
+        Para centralizar as margens da esquerda e da direita pode colocar apenas o valor AUTO.
+    */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+    /*
+        Shorthand do Outline funciona igual ao do border, seguindo a ordem acima: 
+        outline: 5px dashed blueviolet;
+    */
+        }
+
+        a { /*inline-level */
+            border: 10px solid red;
+
+            padding: 10px;
+        }
+        /*
+        Outline fica entre a margem ea borda, ocupando espaço dentro da margem 
+        Outline e borden configuram da mesma forma
+        */
+    /* 
+        Você pode trocar o tipo de box que cada elemnto é. Para isso apenas colocamos display: 
+        exemplo:
+            A tag h1 é um elemento box level, para tranformar em inline level colocamos
+            display: inline
+    */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+
+</body>
+</html>

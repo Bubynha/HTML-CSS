@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte externa</title>
+    <style>
+        /*
+         Utilizar fontes Externas
+         usar regra @font-face
+         */
+        @font-face {
+            font-family: 'love'; /*vc pode escolher o nome  */
+            src: url('fonts/love\ larry\ ttf.ttf') format('truetype');
+            /*
+            para adicionar outra url é só escrever a sintaxe do url novamente*/
+            /* 
+            Tipos de Format
+            opentype - otf
+            truetype - ttf
+            embedde-opentype
+            truetype-aat - Aple Advanced Typography
+            svg*/
+        }
+        /*Quando adicionar o nome da fonte no código , coloque o mesmo nome que escolheu no font-face */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            h1{
+                font-family: 'love', Times, serif;
+                font-size: 3em;
+                font-weight: normal;
+            }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores est tempora deserunt laborum nemo eius ipsa fugiat aut illo vitae, quas natus sint? Earum sint nostrum ipsam quibusdam velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat debitis quidem vitae dolorum obcaecati ea modi quaerat, alias architecto eius, quam libero a accusamus totam officia, aliquam magnam similique repudiandae!</p>
+</body>
+</html>

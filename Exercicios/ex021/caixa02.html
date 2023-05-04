@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkslategray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: chocolate;
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.356);
+        }
+        /*
+        DICA: 
+        Para melhor configurar a sombra de um box, você pode usar o dev tools do navegador (inspecionar)
+        Adicionar a declaração de sombra na box no VSC. No DevTools vai aparecer dois quadradinhos sobrepostos antes do 1px da linha BoxShadow. Clica que abre o menu de regulagem.
+        */
+        nav > a { /* Esta dentro do nav */
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover { /* Quanpo mouse estiver por cima */
+            text-decoration: underline;
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;  /*Arredondamento de borda*/
+        }
+        
+        article{
+            background-color: antiquewhite;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(221, 204, 182);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+/* Transformando a div em uma bola */
+        div#bola { 
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        /*
+        Pra quem não quiser sofrer com erro de margins e paddings excessivos na página, só criar em todo projeto um:
+    * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+        }
+        Em todo projeto o certo é colocar isso logo no inicio, antes de tudo, assim tira as margins e paddings que o navegador coloca por padrão, sendo assim você consegue definir os seus tamanhos próprios */
+    </style>
+</head>
+<body>
+    <!-- header,main e footer são tags semanticas. Além deixar o conteúdo mais organnizado, ajuda mecanismos de busca. Todas elas são entendidas como divs-->
+
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- Menu -->
+            <a href="#">Link</Link></a>
+            <a href="#">Link</Link></a>
+            <a href="#">Link</Link></a>
+            <a href="#">Link</Link></a>
+            <a href="#">Link</Link></a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo Principal -->
+        <section id="Assuntos"> <!-- Seção sobre algo especifico-->
+            <p> Esportes Politica Tecnologia</p>
+        </section>
+        <section id="Noticias">
+            <article> <!-- Conteudo -->
+                <h2>Noticias do Momento</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus dolorem id consequatur repellat iusto dicta dolores natus quod voluptatibus illum, beatae asperiores, cumque aliquid nam modi error placeat magnam assumenda.</p>
+                <aside> <!-- informação sobre o artigo -->
+                    <p>Artigo escrito por Joãozinho</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido por Bruno</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

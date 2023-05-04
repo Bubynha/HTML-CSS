@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol><!-- Listas Ordenadas-->
+        <!--Cada item da lista deve estar dentro de uma tag LI--> 
+       <li>Acordar</li>
+       <li>Ligar para o João</li>
+       <li>Tomar café</li>
+       <li>Escovar os dentes</li>
+       <!--A partir do HTML5 o </li> se tornou opcional-->
+       <li>Lavar Roupa
+    </ol>
+    <!--A tag <ol> possui alguns paramêtros-->
+   <ol type="A">
+    <li>Acordar</li>
+       <li>Ligar para o João</li>
+       <li>Tomar café</li>
+       <li>Escovar os dentes</li> 
+       <!-- Type tem 5 variações: 1 - sequencia numerica; 
+        A - Sequencia com letras maiusculas;
+        a - Sequencia com letras minusculas;
+        I - sequencia em numeros romanos em letras maiscululas;
+        i - Sequencia um numeros romanso em letras minusculas-->
+        <!--Start - defina de qual valor a lista começara a sequencia. Só funciona com scom valor numerico.
+        Em sequequecia de letras para iniciar de um aletra especifica basta colocar o valor igual a ordem que a letra aparece. Exemplo: A = 1, B = 2, ... Z = 26-->
+</ol>
+<h2>Listas não Ordenadas</h2>
+<ul><!--Lista não Ordenada-->
+    <!--Cada item da lista deve estar dentro de uma tag LI-->
+    <li>Pão</li>
+    <li>Leite</li>
+    <li>Café</li>
+    <li>Arroz</li>
+</ul>
+<!--A tag <ul> possui alguns paramêtros-->
+    <!-- Type tem 3 variações:
+        disc - bolinha preta;
+        circle - bolinha aberta;
+        square - quadrado-->
+<h2>Juntando Listas</h2>
+<h3>Minhas linguagens favoritas</h3>
+<ol>
+    <li>Antigas</li>
+    <ol type="a">
+        <li>Clipper</li>
+        <li>Visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a" start="5">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+    </ol>
+</ol>
+<h3>Meus Jogos favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros.2</li>
+                <li>Mario Bros.3</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Super Mario World</li>
+            <li>Donkey Kong Country</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy IX</li>
+            <li>Castlevânia</li>
+        </ul>
+    </ol>
+    <!--DICA: Para alterções rapidas pode colcar o cursor em todos os itens que queira alterar segurando a tecla ALT. Assim quando alterar o valo, será alterado em todos os lugares selecionados-->
+    <h2>Lista de Definições</h2>
+    <dl><!--Lista de Definição-->
+        <!--Os itens dessa Lista ficam dentro de duas tags:
+        DT - Termo;
+        DD - Definição-->
+        <dt>HTML</dt>
+        <dd>Linguagem de maracação para a acriação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do desing de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

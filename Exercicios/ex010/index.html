@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no Github</a>.</p><!-- A tag a serve como uma ancôra ( por isso A). que vai fazer a area com essa tag ser um redirecioandor par ao link nela vinculado-->
+    <!-- O parametro href="" é praticamente obrigatorio. Nele é onde colocaremos a URL para o qual queremos que o ususario , ao clicar, seja redireciaondo-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a>.</p>
+    <!--Recomendado quando usar link externos, utilizar os parametros na tag A target="_blank" (abrir em nova aba) rel="external" ( para indicar ao navegador que é um link externo).
+    Com isso você fará com que o link externo seja aberto em outra guia, assim não fechando seu site
+    -->
+    <h1>Usando links Internos</h1>
+    <p>Está é a primeira do meu site.  Se você quiser,  pode acessar também a minha <a href="pag002.html" rel="next">Segunda página.</a></p>
+    <!--Para rediercionar pára outras paginas do seu site, no parametro href="" você coloca a pagina do seu site para qual você quer redirecionar, desde quê a pagina esteja no mesma pasta da pagina principal-->
+    <!-- Para melhor indicação de navegação, usamos o parametro rel="next" rel="prev", para indicar como flui a navegação no site-->
+    <!--DICA: No VSCode, se segurar a tecla CTRL+ESPAÇO, irá aparecer todas as paginas de seu site para escolher-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a>.</p><!-- target="_self" siginifica abrir na mesma pagina-->
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro" type="application/zip">Livro Compactado em ZIP</a></li>
+        <!-- Existe modos para conseguir colocar um arquivo para download:
+         -Usando o parametro download com o nome do arquivo.extensão do arquivo;
+        - Usando o parametro type. Para consultar o comando para cada media type (formato do arquivo), o site https://www.iana.org/assignments/media-types/media-types.xhtml contem uma lista com  todso os comandos  -->
+        <!-- DICA: Enquanto estivecriando os links e não   tiver links para colocar na tag <a href="", coloque #. Ajuda a saber os ligares onde ainda não colocou-->
+    </ul>
+</body>
+</html>

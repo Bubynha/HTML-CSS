@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+            /*
+            Font-weight - peso da fonte
+            font-widht - largura da fonte
+            font-height - altura da fonte
+             */
+
+            /* 
+            Peso da fonte é como se usa o negrito, podendo assim controlar a sua intensidade
+            O peso de uma fonte pode ser
+            lighter - normal - bold - bolder
+            nem todas as fontes tem todos os pesos
+            tambem podemos usar escla numerica de 100 a 900 ( de 100 em 100)
+            */
+
+            /* 
+            font-style - para poder usar o italico
+            As varições podem ser: normal - italic
+            */
+
+            /* 
+            text-decoration: underline - para sublinhar
+            opção 
+            */
+
+        /* 
+         A declaração de uma fonte fica dessa seguinte forma:
+         font-family: fonte usada
+         font-weight: tipo de peso
+         font-size: tamanho da fonte em EM
+         font-style: tipo de estilo
+
+         Exemplo:
+         font-family: 'Work Sans', sans-serif;
+         font-weight: bolder;
+         font-size: 3em;
+         font-style: italic;
+         */
+
+         /* para simplificar podemos usar uma shorthand
+         para fontes usamos da seguinte forma e ordem::
+         font: font-style -> font-weight -> font-size -> font-family
+
+         Exemplo:
+         font: italic bolder 3em 'Work Sans', sans-serif;
+         
+         */
+
+        /* 
+        Sempre que escolher uma fonte, termine a safe combination com um nome de fonte generica
+        Exemplo: Fonte Serifada - serif 
+        Fonte sem serifa - sans - serif
+        Fonte mono espaçada - monospace 
+        */
+
+        /*
+        Medidas Absolutas
+        cm - centimetro
+        mm - milimetro
+        in - polegada
+        px - pixel
+        pt - ponto
+        pc - paica
+
+        Medidas relativas
+        em - relativo tamanho atual da fonte ( M maisculo da fonte)
+        ex - relativo ao tamanho de x da fonte
+        rem - relativo a fonte que esta configurada no body
+        vw (view width) - relatrivo a largura da sua tela
+        vh (view viewport height- relativo a altura da sua tela
+        
+        Para medidas de fonte, a W3C recomenda usar px e em
+        geralmente 16px equivale a 1em
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A sit itaque ipsam nesciunt culpa assumenda voluptate! Recusandae, harum laboriosam at vitae, voluptates quod rem, sit hic nihil ex obcaecati debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia delectus, perspiciatis repudiandae sit optio aliquam molestiae tempore natus laudantium veritatis fugiat, culpa omnis veniam ipsam hic dolore rem! Officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum iste corrupti sit non, amet adipisci aliquid! Repellat minima doloribus provident id ea blanditiis esse sapiente fuga tempore, debitis accusantium.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere natus quibusdam tempore, consectetur aperiam autem doloremque id necessitatibus odio quidem distinctio unde praesentium reiciendis voluptate sequi hic, beatae odit? Quibusdam!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ad voluptatibus at eveniet adipisci, a fuga nostrum dicta quidem amet eius, ab error sit corrupti quia fugiat harum, nihil quisquam.</p>
+</body>
+</html>

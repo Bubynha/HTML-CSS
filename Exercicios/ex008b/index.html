@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+  <h1>Outras Formatações</h1>
+  <h2>Código-Fonte / Pré-Formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p><!-- tag code deixa todas os caracteres dentro dela com o mesmo espaçamento-->
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR)
+else:
+    print(f'O número {num} é ÍMPAR)
+print(f'Fim do programa')
+        </code>
+    </pre><!-- Tag pre organiza um codigo , deixando ele com identação, considerando ate os espaços no codigo-->
+    <!--Com shift tab vc pode apagar os espaços do no código de valores selecionados-->
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p> <!-- Tag que é usada para marcar citações-->
+    <h2>Citações Completas</h2>
+    <p>Segundo David A. Crowder, no seu livro Construindo Web Sites para Leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Construindo_Web_Sites_Para_Leigos_Tradu/xlLcAwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+     A menos que realmente goste de reprises na televisão ou de fotografia artística, você não vê muita coisa em preto e branco nos dias de hoje.
+    </blockquote> <!-- A tag Blockquote faz uma citação mais deslocada do texto-->
+    <!-- Com seu parametro cite,podemos adicionar a fonte de onde foi vinda essa citação (não aparece no site, mas os buscadores o reconehcem) -->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando</p> 
+    <!-- A tag abbr sereve par aque possamos mostrar que aquele  texto é uma abreviação. Na area title podemos colocar o significado dessa abreviação-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <!-- A tag bdo serve para escrever o texto no sentido que escolher, por exemplo: RTL que significa  Right to Left (direita para esquerda) assim invertendo o texto-->
+</body>
+</html>

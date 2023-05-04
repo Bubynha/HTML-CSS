@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+    IMPORTANTE
+em HTML é id - no CSS é #
+em HTML é class - no CSS é . 
+*/
+
+/*
+Ordem de configuração:
+1 - seletores genericos ( que serve para todos
+2 - id
+3 - class
+
+    IMPORTANTE
+id sobrepõe todas as outras config
+class sobrepõe generico
+*/
+body {
+    background-color:#8CFAB4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #213B2A;
+}
+
+h1#principal { /*  não precisa colocar o nome do elemento(h1, h2, p ,etc.*/
+    text-align: center;
+    background-color: #213B2A;
+    color: white;
+}
+
+h2 {
+    color: #457A58;
+}
+
+.basico {
+    color: #457A58;
+    
+}
+
+.intermediario {
+    color: #9b9b03;
+    
+}
+.avancado {
+    color: #610303;
+}

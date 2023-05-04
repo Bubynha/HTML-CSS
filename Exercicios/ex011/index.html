@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel"><!-- Base. Sempre coloque os sources acima da base e em ordem de tamanho.exemplo: source da imagem menor > medio > base-->
+    </picture>
+    <!--a tag <picture> dá  mais flexibilidade na especificação de recursos de imagem-->
+    <!--Usamos o source:media:type para podemos usar outras imagens de tamanhos diferentes par aassim quando a tela for redimensionada, a imagem com melhor tamanho seja apresentada-->
+    
+    <!-- DICA: sempre coloque uns 50px acima do valor da imagem, par ater margem  quando o rediemnsionamento acontecer-->
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprebder a reproduzir áudios em HTML5.</p>
+    <audio src="midia/happy-mistake.mp3" controls></audio><!-- Tag ára adicionar audio. Funciona igual a imagens-->
+    <!--Para reproduzir o audio-->
+    <!-- A tag possui varios prarametros como:
+    AUTOPLAY - Par ao audio tocar automatico
+    CONTROLS - par aadicionar controles de audio
+    LOOP- par ao audio sempore reiniciar quando terminar
+    Muted - para o audio iniciar mutado-->
+    <!--Formatos de audio compativeis - MP3-OGG-WAV
+    Evite usar wav pois são muito pesados-->
+    <p>Outra forma de adicionar audio é a seguinte</p>
+    <audio controls>
+        <source src="midia/Ice & Fire - King Canyon.mp3" type="audio/mpeg">
+    </audio>
+    <p>Caso seu navegador não conseguir reproduzir o audio. Você pode baixo-lo <a href="midia/Ice & Fire - King Canyon.zip" download="Ice & Fire">CLICANDO AQUI.</a></p>
+
+</body>
+</html>

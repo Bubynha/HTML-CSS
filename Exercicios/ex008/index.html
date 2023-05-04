@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B (Não semântica).</p>
+    <p>Nessa frase, tenho um <strong>termo em destaque</strong> usando a  tag STRONG (semântica / sentido).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos <i>um termo em itálico</i> usando a tag I (não semântica).</p>
+<!--DICA: Para colocar uma area selecionada dentro de uma tag, podemos usar o atalho CONTROL+SHIFT+P - depois escolher a opção ENVELOPE COM A ABREVIATURA (wrap with Abbreviation). CAso a opção não apareça digite na caixa abb - depois digite a tag que quer usar e aperte ENTER-->
+<p>Nesta frasem, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+<h2>Texto Marcado</h2>
+<p>Podemos também criar <mark>um texto marcado</mark> usando a tag MARK.</p>
+<p>Para mudarmos a cor do texto marcado podemos usar a na tag mark o parâmetro de CSS style como usado nessa <mark style="background-color: lime;">palavra</mark></p> <!-- Normalmete se faz isso caso seja um amarcação especifica.-->
+<!--Para mudar a cor de todas as marcações do texto da página, recomenda-se criar uma tag style no cabeçario (a área <head> e dentro dessa tag criar um seletor mark e especificar a cor desejada. mark { background-color: cor que deseja})-->
+<h2>Texto Grande e Pequeno</h2>
+<p>Estamos criando um <big>texto grande</big><!--Tag obsoleta--> e um <small>texto pequeno</small> nesse parágrafo</p>
+<h2>Texto Deletado</h2>
+<p>Podemos marcar <del>um texto como excluído</del> para identificar que ele deve ser lido, mas não considerado.</p>
+<h2>Texto Inserido</h2>
+<p>|Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. </p>
+<p>Existe também <u>o sublinhado</u> com a tag U (não semântica)</p>
+<h2>Texto Sobrescrito</h2>
+<p>Para inserir coisas do tipo x<sup>20</sup>+3 com a tag SUP.</p>
+<h2>Texto Subscrito</h2>
+<p>Para inserir coisas do tipo H<sub>2</sub>O com a tag SUB.</p>
+</body>
+</html>
