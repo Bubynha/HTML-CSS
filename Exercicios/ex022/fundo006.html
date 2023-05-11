@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
-            height: 100vh;
+           /* height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-repeat:no-repeat;
@@ -19,12 +19,35 @@
             countain;  	-> a imagem é 100% exibida, com laterais vazias as vezes
             
 		    cover;		-> cobre a tela toda mesmo que tenha que cortar a imagem  */
-            background-size: cover;
+            /*background-size: cover;
+            background-attachment: fixed;
+            /*l
+            background-attachment: scroll;	-> padrão; o fundo rola junto com o conteúdo
+				                    fixed;	-> fundo fixo à tela, a medida que o conteúdo rola
+                                            (ótimo combinado com background-size: cover;)
+             */
+            
+             /* Shothand 
+             Shorthand - background:
+
+ 	        Sequência:color > image > repeat  > attachment > position >/size
+             a (/) é colocada na frente no size para os navegadores não confudir com o position
+             sigla par alembrar facil: CIRAPS 
+                                    C-olor
+                                    I-magem
+                                    R-epeat
+                                    A-ttachment
+                                    P-osition
+                                    S-ize
+            */
+            background: black url(imagens/wallpaper002.jpg) no-repeat fixed center center /cover;
+
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -35,7 +58,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam aliquid rem dignissimos sapiente perferendis eligendi temporibus sed, alias beatae esse aperiam a odio architecto ipsam! Vel, praesentium est! Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse nesciunt cupiditate blanditiis id dolor veniam sequi similique. Illum eius minus rerum, sequi eligendi quasi fuga voluptas aliquam quo. Veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, eligendi laudantium! Sunt consequuntur accusamus eum esse nisi nobis nemo necessitatibus nostrum, dolor minus repudiandae, facere possimus voluptatum unde dolores consequatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam aliquid rem dignissimos sapiente perferendis eligendi temporibus sed, alias beatae esse aperiam a odio architecto ipsam! Vel, praesentium est! Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse nesciunt cupiditate blanditiis id dolor veniam sequi similique. Illum eius minus rerum, sequi eligendi quasi fuga voluptas aliquam quo. Veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, eligendi laudantium! Sunt consequuntur accusamus eum esse nisi nobis nemo necessitatibus nostrum, dolor minus repudiandae, facere possimus voluptatum unde dolores consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam aliquid rem dignissimos sapiente perferendis eligendi temporibus sed, alias beatae esse aperiam a odio architecto ipsam! Vel, praesentium est! Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse nesciunt cupiditate blanditiis id dolor veniam sequi similique. Illum eius minus rerum, sequi eligendi quasi fuga voluptas aliquam quo. Veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, eligendi laudantium! Sunt consequuntur accusamus eum esse nisi nobis nemo necessitatibus nostrum, dolor minus repudiandae, facere possimus voluptatum unde dolores consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam aliquid rem dignissimos sapiente perferendis eligendi temporibus sed, alias beatae esse aperiam a odio architecto ipsam! Vel, praesentium est! Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse nesciunt cupiditate blanditiis id dolor veniam sequi similique. Illum eius minus rerum, sequi eligendi quasi fuga voluptas aliquam quo. Veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, eligendi laudantium! Sunt consequuntur accusamus eum esse nisi nobis nemo necessitatibus nostrum, dolor minus repudiandae, facere possimus voluptatum unde dolores consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam aliquid rem dignissimos sapiente perferendis eligendi temporibus sed, alias beatae esse aperiam a odio architecto ipsam! Vel, praesentium est! Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse nesciunt cupiditate blanditiis id dolor veniam sequi similique. Illum eius minus rerum, sequi eligendi quasi fuga voluptas aliquam quo. Veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, eligendi laudantium! Sunt consequuntur accusamus eum esse nisi nobis nemo necessitatibus nostrum, dolor minus repudiandae, facere possimus voluptatum unde dolores consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam aliquid rem dignissimos sapiente perferendis eligendi temporibus sed, alias beatae esse aperiam a odio architecto ipsam! Vel, praesentium est! Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse nesciunt cupiditate blanditiis id dolor veniam sequi similique. Illum eius minus rerum, sequi eligendi quasi fuga voluptas aliquam quo. Veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, eligendi laudantium! Sunt consequuntur accusamus eum esse nisi nobis nemo necessitatibus nostrum, dolor minus repudiandae, facere possimus voluptatum unde dolores consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam aliquid rem dignissimos sapiente perferendis eligendi temporibus sed, alias beatae esse aperiam a odio architecto ipsam! Vel, praesentium est! Repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse nesciunt cupiditate blanditiis id dolor veniam sequi similique. Illum eius minus rerum, sequi eligendi quasi fuga voluptas aliquam quo. Veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, eligendi laudantium! Sunt consequuntur accusamus eum esse nisi nobis nemo necessitatibus nostrum, dolor minus repudiandae, facere possimus voluptatum unde dolores consequatur.</p>
     </main>
 </body>
 </html>
