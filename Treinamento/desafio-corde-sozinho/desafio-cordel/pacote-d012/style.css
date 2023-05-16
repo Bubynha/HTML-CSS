@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;}
 
 header {
     background-color: black;
@@ -7,15 +10,45 @@ header {
     text-align: center;
 }
 
+header p {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 4em;
+}
+
 main {
     background-color: antiquewhite;
+    margin-bottom: -20px;
 }
 
 section {
     font-family: cursive;
     font-style: italic;
     font-weight: bold;
-    margin-top: 50px;
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main p {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #joaninha {
@@ -24,6 +57,17 @@ section {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#joaninha p {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.562);
+    margin-left: 10px;
+    padding: 5px;
+    padding-left: 20px;
 }
 
 #carta {
@@ -32,10 +76,21 @@ section {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#carta p {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.562);
+    margin-left: 10px;
+    padding: 5px;
+    padding-left: 20px;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 10px;
 }
