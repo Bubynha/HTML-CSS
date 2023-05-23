@@ -12,6 +12,7 @@
         
         table {
             width: 400px;
+            height: 400px;
             /* juntar ou separar bordas de elementos ( swerve para tabelas) 
             padrão é separate ( separardo)
             Collpase = junta 
@@ -19,21 +20,15 @@
             border-collapse: collapse;
         }
 
-        tr {
-            background-color: aqua;
-        }
-
-        tr.linha {
-            background-color: gray;
-        }
-
         td {
             border: 1px solid black;
             padding: 8px;
-        }
-
-        td.dado {
-            background-color: yellow;
+            text-align: center; /*Alinhamento Horizontal*/
+            vertical-align: middle;
+            /* Alinhamento Vertical
+            Top = Cima
+            Middle = Centro (Padrão)
+            Bottom = Baixo */
         }
 
     </style>
@@ -43,9 +38,9 @@
     <!-- 
         HIERARQUIA DE TABELAS (simples) 
         TABLE = Tabela
-            TABLE ROW = Linha da Tabela
-                TABLE HEADER = Cabeçalho da Tabela
-                TABLE DATA = Dado da Tabela
+            TABLE ROW (TR) = Linha da Tabela
+            TABLE HEADER (TH) = Cabeçalho da Tabela
+            TABLE DATA (TD) = Dado da Tabela
         Se os dados não forem colocados obdecendo a hierarquia, eles irão aparecer em cima ou embaixo da tabela
     -->
     <table>
@@ -54,7 +49,7 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"><!-- Segunda Linha -->
+        <tr><!-- Segunda Linha -->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
@@ -66,7 +61,7 @@
         </tr>
         <tr><!-- Quarta Linha -->
             <td>A4</td>
-            <td class="dado">B4</td>
+            <td>B4</td>
             <td>C4</td>
         </tr>
         <!-- No HTML 5 o fechamento da tag  de dados da tabela '</td>' não é obrigatorio-->
