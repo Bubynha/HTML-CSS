@@ -13,6 +13,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -20,7 +28,28 @@
             padding: 10px;
             
         }
-        
+        /* 
+        EFEITO ZEBRADO NA TABELA
+        Pseudo classe :nth-child(2n)
+        sendo o numero do pareteses o intervalo de linhas onde a cor irá aparecer.
+        Tambem pode usar o valor pares e impares usando os valores
+        odd - impar
+        even - par
+        */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkgreen;
+
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
+
         thead, tfoot {
             background-color: darkgreen;
             color: white;
@@ -28,23 +57,38 @@
         .num {
             text-align: right;
         }
+        /* CRIANDO CABEÇALHO FIXO
+        1. Na CSS, coloque em THEAD o parametro POSITION RELATIVE
+        2. Crie uma configuração para os th
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: Cor de preferencia;
+        com isso o top da tabela ficara fixo en quanto estiver mostrando dados da tabela
+          */
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES 
         TABLE
+            CAPTION - Legenda
            THEAD - Cabeçalho da Tabela
                 TR, TD, TH
             TBODY - Corpo da Tabela
                 TR, TD, TH
             TFOOT - Rodapé da Tabela
                 TR, TD, TH
+        TH scope
+            ROW - se o dado estiver na mesma linha
+            COL - se o dado estiver na coluna
+        
      -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -157,11 +201,22 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <strong>
                 <td class="num">210.147.125</td>
             </strong>
         </tfoot>
-    </table>    
+    </table> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, labore nisi asperiores rem architecto aut unde perferendis? Dolorum hic minus exercitationem. Molestiae maiores odit architecto, obcaecati impedit nesciunt vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aperiam debitis quidem dolorum sapiente soluta officiis suscipit quod doloribus. Unde enim saepe minus soluta odio tenetur quod consequuntur vero! Consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laboriosam illo rem eius veniam, dolore expedita, libero voluptates excepturi quis molestiae minus architecto fugiat harum nam veritatis. Iusto, eius dicta.</p> 
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, labore nisi asperiores rem architecto aut unde perferendis? Dolorum hic minus exercitationem. Molestiae maiores odit architecto, obcaecati impedit nesciunt vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aperiam debitis quidem dolorum sapiente soluta officiis suscipit quod doloribus. Unde enim saepe minus soluta odio tenetur quod consequuntur vero! Consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laboriosam illo rem eius veniam, dolore expedita, libero voluptates excepturi quis molestiae minus architecto fugiat harum nam veritatis. Iusto, eius dicta.</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, labore nisi asperiores rem architecto aut unde perferendis? Dolorum hic minus exercitationem. Molestiae maiores odit architecto, obcaecati impedit nesciunt vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aperiam debitis quidem dolorum sapiente soluta officiis suscipit quod doloribus. Unde enim saepe minus soluta odio tenetur quod consequuntur vero! Consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laboriosam illo rem eius veniam, dolore expedita, libero voluptates excepturi quis molestiae minus architecto fugiat harum nam veritatis. Iusto, eius dicta.</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, labore nisi asperiores rem architecto aut unde perferendis? Dolorum hic minus exercitationem. Molestiae maiores odit architecto, obcaecati impedit nesciunt vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aperiam debitis quidem dolorum sapiente soluta officiis suscipit quod doloribus. Unde enim saepe minus soluta odio tenetur quod consequuntur vero! Consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laboriosam illo rem eius veniam, dolore expedita, libero voluptates excepturi quis molestiae minus architecto fugiat harum nam veritatis. Iusto, eius dicta.</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, labore nisi asperiores rem architecto aut unde perferendis? Dolorum hic minus exercitationem. Molestiae maiores odit architecto, obcaecati impedit nesciunt vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aperiam debitis quidem dolorum sapiente soluta officiis suscipit quod doloribus. Unde enim saepe minus soluta odio tenetur quod consequuntur vero! Consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laboriosam illo rem eius veniam, dolore expedita, libero voluptates excepturi quis molestiae minus architecto fugiat harum nam veritatis. Iusto, eius dicta.</p> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, labore nisi asperiores rem architecto aut unde perferendis? Dolorum hic minus exercitationem. Molestiae maiores odit architecto, obcaecati impedit nesciunt vitae. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aperiam debitis quidem dolorum sapiente soluta officiis suscipit quod doloribus. Unde enim saepe minus soluta odio tenetur quod consequuntur vero! Consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laboriosam illo rem eius veniam, dolore expedita, libero voluptates excepturi quis molestiae minus architecto fugiat harum nam veritatis. Iusto, eius dicta.</p> 
 </body>
 </html>
