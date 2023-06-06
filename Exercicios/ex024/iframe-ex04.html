@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Segurança</title>
+</head>
+<body>
+    <h1>SITE PRINCIPAL</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est accusantium molestiae ipsam illo assumenda ut iure perferendis ab laudantium aspernatur modi enim, asperiores delectus, adipisci, repellat soluta animi dolorum? Quia.</p>
+<!--  
+    Uma forma de aumentar segurança de iframes é suando no párametro SANDBOX com o valor SANDBOX.
+
+    Com isso o Iframe não irá capturar os dados inseridos
+ -->
+<!-- 
+    Com o parametro referrerpolicy="no-referrer , vc faz o site carregado no Iframe não coletar nenhuma informação do usuario
+-->
+    <iframe src="paginas-extras/pagina004.html" sandbox="sandox" referrerpolicy="no-referrer"> Seu Navegador não é compativel com isso...</iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis sed dolorum et tempora amet eius, eum soluta? Quis similique consequuntur quasi nisi architecto enim illum corrupti ducimus est cupiditate?</p>
+
+    <!-- 
+        Tambem podemos autorizar a captura de dados do IFrame, por exemplo quando, o  que esta no iframe vem da mesma origem da pagina do Iframe. Para isso usamos os valores:
+
+        -allow-same-origin = permitir da mesma origem;
+        -allow-forms = permitir formularios;
+        -allow-scripts = Permitor scripts;
+     -->
+
+    <iframe src="paginas-extras/pagina004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"> Seu Navegador não é compativel com isso...</iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aspernatur ullam laborum unde libero commodi adipisci quos quasi veritatis. Assumenda sit asperiores animi quis mollitia quidem consequuntur, et quisquam fugit?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae reprehenderit et accusantium beatae eveniet aliquid tenetur iste non ea sunt. Optio id amet fugit libero deleniti maxime reiciendis nam quisquam.</p>
+
+    <iframe src="paginas-extras/pagina005.html" referrerpolicy="no-referrer" sandbox="sandbox"></iframe>
+</body>
+</html>
