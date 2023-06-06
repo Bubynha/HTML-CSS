@@ -23,7 +23,7 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ipsam nulla distinctio voluptatibus quis quasi totam porro quod quo aliquid labore expedita nam, dicta tempore dolore vel quidem ab voluptate.</p>
 <!-- 
     - Para abrir paginas selecionaveis em um iframe
-    - Damos um nome ao iframe com a propriedade 'NAME='
+    - Damos um nome ao iframe com a parametro 'NAME='
     - No link que queremos que seja aberto no Iframe, colocamos no valor do TARGET o nome que foi dado ao IFrame 
 -->
     <ul>
@@ -33,8 +33,11 @@
     </ul>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque atque accusantium sapiente ullam delectus, repudiandae aperiam dolorem? Sed inventore fuga dolorem laboriosam. Assumenda nihil vel placeat voluptatem! Suscipit, temporibus unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto voluptatem fugit dolorum? Molestiae aliquid officia corporis amet cum. Nobis numquam ratione provident magnam ducimus est accusantium pariatur sint ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illum cumque corporis veritatis, error commodi odit amet, ex totam harum a mollitia ad sint rem voluptas quo optio nisi praesentium.</p>
-
-    <iframe id="tela" name="frame" src="">
+<!--
+    Com o parametro SRCDOC podemos colocar no Iframe um conteudo qualquer dentro do Iframe, podendo ser paragrafos, imagens e varias outras coisas
+ -->
+    <iframe id="tela" name="frame" 
+    srcdoc="<h1>Escolha uma das opções acima</h1><p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque atque accusantium sapiente ullam delectus, repudiandae aperiam dolorem? Sed inventore fuga dolorem laboriosam. Assumenda nihil vel placeat voluptatem! Suscipit, temporibus unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><img src='imagens\abf72cd40a08463fad0b3d153da66cae.png' width='750px'>">
         <p>Infelizmente seu Navegador não é compativel</p>
     </iframe>
 
