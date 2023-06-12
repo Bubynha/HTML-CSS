@@ -2,10 +2,18 @@
 
 * {
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
+
+body {
+    background: fixed;
+    background-color: aqua;
+    background-image: url(../imagens/fundo-madeira.jpg);
+    text-align: center;
+}
 
 li {
-    padding: 2px;
+    padding: 5px;
     text-align: right;
 }
 
@@ -16,7 +24,9 @@ img {
     border-radius: 50% 50% 50% 50%;
 }
 
-iframe {
-    width: 450px;
+
+iframe { 
+    position:static;
+    width: 400px;
     height: 705px;
 }
