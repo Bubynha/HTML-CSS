@@ -6,7 +6,10 @@
 }
 
 body {
-    background: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-color: aqua;
     background-image: url(../imagens/fundo-madeira.jpg);
     text-align: center;
@@ -26,7 +29,6 @@ img {
 
 
 iframe { 
-    position:static;
     width: 400px;
-    height: 705px;
+    height: 710px;
 }
