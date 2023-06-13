@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +29,9 @@ img {
 }
 
 
+
 iframe { 
-    width: 400px;
-    height: 710px;
+    width: 600px;
+    height: 700px;
 }
+
