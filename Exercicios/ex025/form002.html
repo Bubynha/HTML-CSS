@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <!-- NOME E LIGAÇÃO -->
+            <label for="iusu"> Usuario:</label>
+            <!-- CAIXA DE PREENCHIMENTO DE TEXTO -->
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="12" placeholder="Nome do Usuario" autocomplete="username">
+        </p>
+        <p>
+            <!-- NOME E LIGAÇÃO -->
+            <label for="isen"> Senha:</label>
+            <!-- CAIXA DE PREENCHIMENTO DE SENHA -->
+            <input type="password" name="sen" id="isen" required minlength="8" size="8" placeholder="Min 8 Letras" autocomplete="current-password">
+        </p>
+        <!-- BOTÕES ENVIAR/LIMPAR -->
+        <p>
+            <!-- ENVIAR -->
+            <input type="submit" value="Enviar">
+            <!-- LIMPAR -->
+            <input type="reset" value="Limpar">
+        </p>
+        <!-- 
+            ATRIBUTOS
+            SIZE - TAmanos da caixa. Valor indica o numero de caracteres que serão visiveis. Isso não muda o numero limite;
+            PLACEHOULDER - Adiciona um valor temporario. pode ser usado como dica;
+            AUTOCOMPLETE (na tag input) - Escolhe o tipo de dado que ele indicará no autocompete;
+            REQUIRED - Define que os dados da caixa são obrigatórios para o envio de dados;
+            MINLENGTH - Define um avalor minimo de caracteres para a caixa;
+            MAXLENGTH - Define um valor maximo para a caixa; 
+            PS: As mensagens que aparecem são um pequeno Script vno formato javascript que os navegadores executam como padrão. Para formularios funciaonerm em iframes precisa autorizar a execução de scripts
+         -->
+    </form>
+</body>
+</html>

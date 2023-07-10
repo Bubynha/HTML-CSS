@@ -7,12 +7,19 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> 
+    <form action="cadastro.php" method="post"
+    autocomplete="off"> 
         <!-- 
             ACTION - local par aonde os dados preenchidos serão enviado ao clicar em submit
-            AUTOCOMPLETE - desligar/ ligara caixa de sugestões
+            AUTOCOMPLETE - desligar/ ligar a caixa de sugestões
         -->
         
+        <!-- 
+            METHOD:
+            GET - Dados enviados são mostrados na url. Usar quando os dados não forem sensiveis;
+            POST - dados enviados não são mostrados na url. Quando for muitos dados; dados sensiveis; enviar arquivos.
+        -->
+
         <!-- CAIXA DE PREENCHIMENTO -->
         <p>
             <label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
