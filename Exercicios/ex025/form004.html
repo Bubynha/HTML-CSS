@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário 4</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+        <!-- TAG FILDSET = Agrupa elementos selecioandos -->
+            <legend>Dados Pessoais</legend>
+            <!-- TAG LEGEND = Adiciona uma legenda ao agrupamento-->
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Insira seu Nome">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Insira seu Email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required autocomplete="tel" placeholder="(12)21234-5678" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+                <!--
+                    Para exigir que um formato especifico de texto usamos uma RegEX. Para adicionar a RegEx usamos o pararmetro pattern e dentro dele digitamos a RegEx que queremos;
+                    No exemplo usmos ^\(\d{2}\)\d{4,5}-\d{4}$, isso significa o seguinte:
+                    ^abre o regex;
+                    $fecha o regex;
+                    \( e \)  exigir parenteses;
+                    \d - exigir digitos;
+                    {4,5}  numero de digitos exigidos, no caso 4 ou 5 digitos;
+                    -  pedir para que digite o -
+                    {4} exige 4 digitos;
+                -->
+                <!-- Estudar sobre RegEX (expressoes regulares)-->
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </form>
+</body>
+</html>
