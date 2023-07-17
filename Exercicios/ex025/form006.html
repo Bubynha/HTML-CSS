@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Escolha uma Cor</legend>
+            <p>
+                <!-- SELEÇÃO DE CORES -->
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+                <!-- com o Value="Codigo da cor" podemos definir um cor como padrão -->
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Nivel de Satisfação</legend>
+            <!-- INPUT RANGE (escala) -->
+            <p>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="5">
+                <!-- 
+                    Por padrão a escala vai de 0 a 100, alem disso sempre estara no valor do meio da escala.
+                    Podemos difinir valores minimos e maximos com os parametros MIN e MAX e um valor padrão com o VALUE
+                 -->
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Escolha uma foto de Perfil</legend>
+            <!-- INPUT FILE -->
+            <!-- 
+                Permite ao usuario escolher um arquivo para ser enviado.
+                Para que o controle funcione, o formulario precisar ser do METHOD POST
+             -->
+            <p>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
