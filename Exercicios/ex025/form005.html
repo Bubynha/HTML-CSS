@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulários de treino</h1>
+    <form action="cadastro.php" method="get">
+        <!-- 
+            RADIO - BOTÃO DE RADIO
+            USado geralmenet quando só se pode escolher apenas uma opção
+        -->
+        <fieldset>
+            <!-- 
+               Todas as caixas de um mesmo grupo de radios precisão ter nomes iguais mas id diferentes.
+             -->
+             <!-- 
+                Também precisa ter um VALUE, para ser enviado
+              -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" checked>
+            <label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+            <!-- 
+                PARAMETRO CHECKED - Deixar caixa marcada como padrão
+             -->
+        </fieldset>
+        <fieldset>
+            <!--
+                 CHECKBOX - CAIXA DE SELEÇÃO 
+                Usado quando pode-se escolher varias opções
+            -->
+            <legend>Meus Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut">
+            <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esvol" id="iesvol">
+            <label for="iesvol">Vôlei</label><br>
+            <input type="checkbox" name="esbas" id="iesbas">
+            <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="escic" id="iescic">
+            <label for="iescic">Ciclismo</label><br>
+            <!-- 
+                Tag label esta sendo usada para ligar a palavra a caixa de seleção, assim clicando na palavra a caixa é marcada. Para isso o label precisa ter o mesmo id do input 
+            -->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
