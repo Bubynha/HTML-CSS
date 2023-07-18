@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Outros Controles (sem a tag input)</h1>
+    <form action="cadastro.php" method="post">
+        <!--
+             TAG SELECT
+             Cria menu de lista de itens 
+             Para adicionar um valor na lista, usa a tag OPTION;
+             Podemos agrupar os elementos de option em gupos usando a tag OPTGROUP;
+            Para colocar um nome no grupo utilizamos o paranetro LABEL ( não Confundir com a tag LABEL);
+            Para deixar um valor como padrão usa o parametro SELECTED;
+        -->
+        <fieldset>
+            <legend>Estados Brasileiros</legend>
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="est" id="iest">
+                    <option value=""selected>-- Escolha ---</option>
+
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+
+                    <optgroup label="Região Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="ES">Espírto Santo</option>
+                        <option value="MG">Minas Gerais </option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+        <!-- 
+            TAG DATALIST
+            Cria uma lista de elementos em uma caixa comum. Com isso temos uma lista onde podemos adicionar itens que não estejam na lista
+            Para adicionar a lista adiciaonamos o parametro LIST="id do datalist"
+         -->
+        <fieldset>
+            <legend>Profissões</legend>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof"
+                id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="PROF">Professor</option>
+                    <option value="DEV">Desenvolvedor</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <!--
+             TAG TEXTAREA 
+             Adiciona um campo onde o usuario pode digitar uma mensagem;
+             cols=caracteres  por linha;
+             rows= linhas ;
+             Não existe limitação de caracteres;
+             cols e rows serve para o tamanho em que a caixa será mostrada
+        -->
+        <fieldset>
+            <legend>Digite uma Mensagem</legend>
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
