@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Mais exemplos com a TAG OUTPUT</h1>
+    <form action="cadastro.php" method="post">
+        <!--
+            Usamos o codigo JAVASCRIPT para transmitir os dados par aa TAG OUTPUT 
+            Nesse exemplo temos a tag SCRIPT para organização
+            EXEMPLO DO CODIGO: oninput="calcIdade() = Nome do Script;
+            SCRIPT = function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value);
+            SENDO:
+            oninput significa Quando eu digitar;
+            let atual = Criar um aVariavel de nome ATUAL
+            new Date().getFullYear()= Adicionar nela do ano atual de forma completa
+            iidade.innerHTML = Number(atual) - Number(iano.value) = Calclo entre a vairavel atual e o valor inserido no Input de ID iano;
+        -->
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output name="idade" id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
