@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <!-- 
+        MEDIA QUERY - MEDIA FEATURE
+        MEDIA FEATURE TRAZ AS CARACTERISTICA DA MEDIA TYPE
+     -->
+    <link rel="stylesheet" href="estilo/style.css" media="all"><!--USADA PARACONFIG QUE ESTARAM EM TODOS OS TIPOS--> 
+    <!-- DECLARANDO O MEDIA FEATURE -->
+    <!-- 
+        PARA DECLARAR O MEDIA FEATURE SE COLOCA DEPOIS DO TIPO "AND (tipo de feature)"
+
+        MEDIA TYPES SÂO DECLARADOS NO INICIO E FORA DE PARENTESES;
+        MEDIA FEATURES SÂO DECLARADAS DEPOIS E DENTRO DE PARENTESES E ISOLADOS PARA CADA FEATURE.
+     -->
+    <link rel="stylesheet" href="estilo/retrato.css" media="screen and (orientation: portrait)"><!-- EXECUTAR CONFIGURAÇÕES NO TIPO SCREEN E ORIENTAÇÃO DE TELA EM RETRATO-->
+
+    <link rel="stylesheet" href="estilo/paisagem.css" media="screen and (orientation: landscape)"><!-- EXECUTAR CONFIGURAÇÕES NO TIPO SCREEN E ORIENTAÇÃO DE TELA EM PAISAGEM-->
+</head>
+<body>
+    <h1>Mude a orientação de seu dispositivo</h1>
+</body>
+</html>

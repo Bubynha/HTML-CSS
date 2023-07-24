@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* APARELHO NO MODO PAISAGEM/LANDSCAPE (DEITADO) */
+
+body {
+    background-image: url(../imagem/cev-landscape.jpg);
+    /* URL - . = voltar pasta para cada ponto*/
+    background-position: left bottom;
+}

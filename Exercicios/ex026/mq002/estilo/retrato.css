@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* APARELHO NO MODO RETARTO/PORTRAIT (EM PÉ) */
+
+body {
+    background-image: url(../imagem/cev-portrait.jpg);
+    /* URL - . = voltar pasta para cada ponto*/
+    background-position: center bottom;
+}
