@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+
+    <!-- Link do icone do menu tipo hamburguer -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
     <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
@@ -15,7 +19,11 @@
 <body>
     <header>
         <h1>Site com Menu Responsivo</h1>
-        <nav>
+
+        <!-- MENU "HAMBURGUER" -->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <!-- on click="clickMenu()" - função para ativar o script em Javascript para esconder/aparecer com os itens do menu -->
+        <nav id="item">
             <ul>
                 <li><a href="#">OPÇÃO 1</a></li>
                 <li><a href="#">OPÇÃO 2</a></li>
@@ -27,13 +35,40 @@
     </header>
     <main>
         <article>
-            <h2>Tesstando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rerum explicabo atque rem est dolorem maiores veritatis repellat dignissimos doloremque, modi perspiciatis, ullam maxime ut repudiandae quia iure pariatur reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum at impedit provident unde eveniet, error ex ipsam non obcaecati quae cumque soluta voluptatum quam suscipit eos, sequi esse? Maiores, ex.
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rerum explicabo atque rem est dolorem
+                maiores veritatis repellat dignissimos doloremque, modi perspiciatis, ullam maxime ut repudiandae quia
+                iure pariatur reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum at impedit
+                provident unde eveniet, error ex ipsam non obcaecati quae cumque soluta voluptatum quam suscipit eos,
+                sequi esse? Maiores, ex.
             </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab at nemo est dolore impedit nesciunt expedita ad sint culpa voluptas aut eligendi quaerat deleniti, ex similique repellendus! Tempore, maxime!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit tempora nemo! Mollitia, eveniet saepe ipsum voluptatibus nam dignissimos nostrum perferendis, laboriosam repellat aut ea excepturi tempore cum explicabo. Voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis rem aut qui ut, tempore dolor eaque ab? Hic animi delectus enim nesciunt vitae repellat neque cum accusantium molestiae natus. Voluptates.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab at nemo est dolore impedit nesciunt
+                expedita ad sint culpa voluptas aut eligendi quaerat deleniti, ex similique repellendus! Tempore,
+                maxime!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit tempora nemo! Mollitia, eveniet
+                saepe ipsum voluptatibus nam dignissimos nostrum perferendis, laboriosam repellat aut ea excepturi
+                tempore cum explicabo. Voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+                rem aut qui ut, tempore dolor eaque ab? Hic animi delectus enim nesciunt vitae repellat neque cum
+                accusantium molestiae natus. Voluptates.</p>
         </article>
     </main>
+    <!-- SCRIPT PARA ESCONDER E APARECER OS ITENS DO MENU -->
+    <!-- Script esta em JavaScript -->
+    <!-- Sendo
+        item-menu - id da tag nav, onde terá os elementos alterados
+        style - nome da css onde a função vai ser executada
+        diplay = 'block'  - Elemento da CSS que vai ser alterado
+    -->
+    <script>
+        function clickMenu() {
+            //Condicional paara esconder/aparecer com os itens
+            if (item.style.display == 'block') { //Se display estiver com valor block
+                 item.style.display = 'none' //mudar valor de display para none 
+                } else { // se não 
+                    item.style.display = 'block' // mudar valor de display para block 
+                }
+        }
+    </script>
 </body>
 
 </html>
