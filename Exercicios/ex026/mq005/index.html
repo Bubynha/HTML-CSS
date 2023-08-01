@@ -10,13 +10,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
-    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
-    <link rel="stylesheet" href="estilos/tela-grande.css" media="screen and (min-width: 1200px)">
-    <link rel="stylesheet" href="estilos/print.css" media="print">
+    <link rel="stylesheet" href="estilos/outras -midias.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
+    <!-- inserindo um script para controlar o menu quando ouver um redimensionamento da pagina-->
     <header>
         <h1>Site com Menu Responsivo</h1>
 
@@ -61,12 +59,25 @@
     -->
     <script>
         function clickMenu() {
-            //Condicional paara esconder/aparecer com os itens
+            //Condicional para esconder/aparecer com os itens
             if (item.style.display == 'block') { //Se display estiver com valor block
-                 item.style.display = 'none' //mudar valor de display para none 
-                } else { // se não 
-                    item.style.display = 'block' // mudar valor de display para block 
-                }
+                item.style.display = 'none' //mudar valor de display para none 
+            } else { // se não 
+                item.style.display = 'block' // mudar valor de display para block 
+            }
+        }
+        // SCRIPT PARA CONTROLE DO EMNU EM REDIMENSIONAMENTO
+        // Se a janela for maior ou igual a 768px
+        // mudar valor de display para block
+        // se não 
+        //mudar valor para none
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) 
+            {
+                item.style.display = 'block'
+             } else { 
+                item.style.display = 'none'
+             }
         }
     </script>
 </body>
