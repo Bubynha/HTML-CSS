@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.pai {
+    background-color: yellow;
+    height: 50vh;
+
+    /* FLEXBOX */
+    display: flex; 
+
+    /* Eixo Principal */
+    flex-direction: row; /* Direção do Eixo Principal */
+    /*
+      VALORES DO FLEX-DIRECTION
+      
+      ROW = Esqueda para a direita (Valor padrão)
+      
+      ROW-REVERSE = Direita para a esquerda
+      
+      COLUMN = Cima para baixo
+      
+      COLUMN = Baixo para cima
+     */
+
+    justify-content: flex-start; /* Alinhamento dos itens em relação ao Eixo Principal*/
+    /*
+     VALORES JUSTIFY- CONTENT
+
+      FLEX-START = Alinha os itens no começo do eixo principal (É o valor padrão)
+
+      FLEX-END = Alinha os itens no final do eixo principal
+
+      CENTER = Alinha os itens no centro do eixo principal
+      
+      SPACE-BETWEEN = divide o espaço do pai entre os filhos (bastante utilizado)
+      
+      SPACE-AROUND = Distribui os espaço dos pai na esqueda e direita dos itens
+      
+      SPACE-EVENLY = Distribui o espaço entre os intens igualmente (bastante utilizado)
+     */
+
+     gap: 10px; /* Coloca um espaçamento entre os itens*/
+     /* Com o GAP, não empurrámos o elemento pai */
+
+     align-items: stretch; 
+     /*
+      Alinha os itens no eixo transversal ao eixo principal
+      EXEMPLO = Se  eixo principal for row (linha), o eixo tranversal será column (coluna). Logo ALIGN-ITEMS alinhará os itens em relação a coluna.
+
+      VALORES DO ALIGN-ITEM
+      
+      STRETCH = Item vai ocupar todo o espaço possivel que o item pode ocupar (desde que o item não tenha um tamanho especifico
+      */
+}
+
+
+.filho {
+    background-color: blue;
+}
