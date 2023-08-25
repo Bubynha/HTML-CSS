@@ -8,12 +8,11 @@
 
 .pai {
     background-color: yellow;
-    height: 50vh;
 
     /* FLEXBOX */
     display: flex; 
 
-    /* Eixo Principal */
+    /* Eixo Principal (main axis) */
     flex-direction: row; /* Direção do Eixo Principal */
     /*
       VALORES DO FLEX-DIRECTION
@@ -27,7 +26,7 @@
       COLUMN = Baixo para cima
      */
 
-    justify-content: flex-start; /* Alinhamento dos itens em relação ao Eixo Principal*/
+    justify-content: flex-start; /* Alinhamento dos itens em relação ao Eixo Principal (main axis)*/
     /*
      VALORES JUSTIFY- CONTENT
 
@@ -49,15 +48,32 @@
 
      align-items: stretch; 
      /*
-      Alinha os itens no eixo transversal ao eixo principal
+      Alinha os itens no eixo transversal Cross axis) ao eixo principal
       EXEMPLO = Se  eixo principal for row (linha), o eixo tranversal será column (coluna). Logo ALIGN-ITEMS alinhará os itens em relação a coluna.
 
       VALORES DO ALIGN-ITEM
       
-      STRETCH = Item vai ocupar todo o espaço possivel que o item pode ocupar (desde que o item não tenha um tamanho especifico
-      */
-}
+      STRETCH = Item vai ocupar todo o espaço possivel que o item pode ocupardo pai (desde que o item não tenha um tamanho especifico)(Valor padrão)
 
+      FLEX-START = Alinha os itens no começo do eixo 
+
+      FLEX-END = Alinha os itens no final do eixo
+
+      CENTER = Alinha os itens no centro do eixo
+
+      BASELINE = Se baseia na fonte de maior tamanho. Os itens se alinham na linha base do item de maior tamanho. Bom para alinhar textos
+      */
+      flex-wrap: nowrap; /* Quebra de linha em flexbox*/
+      /*
+       VALORES DO FLEX-WRAP
+
+       NOWRAP = Não quebra a linha (Valor padrão)
+
+       WRAP = Quebra a linha
+
+       WRAP-REVERSE = Quebra a linha de forma reversa ao sentido do cross axix (eixo tranversal)*/
+
+}
 
 .filho {
     background-color: blue;
