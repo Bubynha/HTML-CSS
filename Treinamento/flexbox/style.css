@@ -84,7 +84,7 @@
        O COdigo que temos acima pode ser substituido por
        FLEX-FLOW: ROW WRAP  direção e wrap
        */
-    flex-flow: row wrap;
+        flex-flow: row wrap;
         align-content: flex-start;
         /* Alinhas os itens usando como base as linhas, assim aproximando os itens
         Possui os mesmo valores de align itens*/
@@ -120,14 +120,20 @@
 /* Serve para alinhar os elementos filhos individualmente */
 
 .filho:nth-child(1){
-    align-self: center;   
+    align-self: flex-start; 
+    height: 200px;
+    width: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 .filho:nth-child(2){
-    align-self: flex-end;
+    align-self: center;
 
 }
 .filho:nth-child(3) {
-    align-self: flex-start;
+    align-self: flex-end;
+    flex-grow: 2;
 }
 /* ORDER 
     MUDA A ORDEM DE EM QUE OS ELEMENTOS SÂO APRESENTADOS. OS ELEMENTOS SÂO MOSTRADOS DE ACORDO COM SEU VALOR DE ORDEM, ONDE OS VALORES MENORES VEM PRIMEIRO. ELEMENTOS TIVEREM COM O MESMO VALOR DE ORDEM SERÂO MOTRADOS NA ORDEM QUE FORAM ESCRITOS NO HTML
