@@ -9,11 +9,14 @@
 .pai {
     background-color: yellow;
 
+    height: 80vh;
+
     /* FLEXBOX */
     display: flex; 
 
     /* Eixo Principal (main axis) */
-    flex-direction: row; /* Direção do Eixo Principal */
+    /* flex-direction: row; */
+     /* Direção do Eixo Principal */
     /*
       VALORES DO FLEX-DIRECTION
       
@@ -43,10 +46,12 @@
       SPACE-EVENLY = Distribui o espaço entre os intens igualmente (bastante utilizado)
      */
 
-     gap: 10px; /* Coloca um espaçamento entre os itens*/
-     /* Com o GAP, não empurrámos o elemento pai */
+     padding: 20px;
+     gap: 20px; /* Coloca um espaçamento entre os itens*/
+     /* Com o GAP, não empurramos o elemento pai 
+     É comum utilizar padding no elemnto pai do mesmo tamanho do gap*/
 
-     align-items: stretch; 
+     align-items: flex-start; 
      /*
       Alinha os itens no eixo transversal Cross axis) ao eixo principal
       EXEMPLO = Se  eixo principal for row (linha), o eixo tranversal será column (coluna). Logo ALIGN-ITEMS alinhará os itens em relação a coluna.
@@ -63,7 +68,8 @@
 
       BASELINE = Se baseia na fonte de maior tamanho. Os itens se alinham na linha base do item de maior tamanho. Bom para alinhar textos
       */
-      flex-wrap: nowrap; /* Quebra de linha em flexbox*/
+      /* flex-wrap: wrap; */
+       /* Quebra de linha em flexbox*/
       /*
        VALORES DO FLEX-WRAP
 
@@ -72,9 +78,72 @@
        WRAP = Quebra a linha
 
        WRAP-REVERSE = Quebra a linha de forma reversa ao sentido do cross axix (eixo tranversal)*/
-
+    
+       /*PRORIEDADE FLEX-FLOW 
+       FLEX-FLOW faz as funções de FLEX-DIRECTION e FLEX WRAP em uma unica prpriedade.
+       O COdigo que temos acima pode ser substituido por
+       FLEX-FLOW: ROW WRAP  direção e wrap
+       */
+    flex-flow: row wrap;
+        align-content: flex-start;
+        /* Alinhas os itens usando como base as linhas, assim aproximando os itens
+        Possui os mesmo valores de align itens*/
 }
-
+/* PRPRIEDADES DOS ELEMENTOS FILHOS */
 .filho {
     background-color: blue;
+
+    /* SHORT HAND PARA O FLEX GROW SHRINK E BASIS
+
+         GROW = SHRINK = BASIS
+    flex:  0  =   1    = 100px,
+    */
+    flex: 1;
+    /* flex-grow: 1; */
+    /* Distribui o espaço que sobresalente da linha entre os filhos.
+    Se um item tiver um flex-grow com maior valor, ele pegara mais do espaço que esta sobrando para ele.
+    EXEMPLO: se o item1 tem valor 1 e o item 2 valor 2, o item 2 pegara x2 espaço em compararção ao item 1.
+    POR PADRÂO O VALOR É 0 (Desligado)*/
+
+    /* flex-shrink: 1; */
+    /* Diminui o tamanho do item 
+    FUNCIONA DA MESMA AMNEIRA QUE O GROW,MAS DIMINUINDO O TAMANHO.
+    POR PADRÂO O VALOR VEM É 1.
+    SHRINK NÂO É MUITO UTILIZADO E NÂO È RECOMENDADO DESLIGAR O SHRINK
+    */
+
+    /* flex-basis: 100px;
+    /* Dá um valor inicial base para o elemento filho `
+    É CONFIGURADO COMO O WIDTH*/
 }
+/* PROPRIEDADE ALIGN-SELF*/
+/* Serve para alinhar os elementos filhos individualmente */
+
+.filho:nth-child(1){
+    align-self: center;   
+}
+.filho:nth-child(2){
+    align-self: flex-end;
+
+}
+.filho:nth-child(3) {
+    align-self: flex-start;
+}
+/* ORDER 
+    MUDA A ORDEM DE EM QUE OS ELEMENTOS SÂO APRESENTADOS. OS ELEMENTOS SÂO MOSTRADOS DE ACORDO COM SEU VALOR DE ORDEM, ONDE OS VALORES MENORES VEM PRIMEIRO. ELEMENTOS TIVEREM COM O MESMO VALOR DE ORDEM SERÂO MOTRADOS NA ORDEM QUE FORAM ESCRITOS NO HTML
+    EXEMPLO:
+ itens com mesmo numero de ordem:
+    .item1 {order:1;}
+    .item2 {order:1;}
+    .item3 {order:1;}
+  -------------------------  
+    item1 item2 item3
+  -------------------------
+  itens com numero de ordem diferente: 
+  .item1 {order:3;}
+  .item2 {order:1;}
+  .item3 {order:2;}
+  -------------------------
+    item2 item3 item1
+  -------------------------  
+*/
